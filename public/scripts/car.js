@@ -27,12 +27,12 @@ class Car {
   };
   render() {
     return `
-            <div class="card" style="width: 23rem">
+            <div class="card" style="width: 23rem;">
               <div class="card-body">
                 <img src="${this.image}" class="card-img-top rounded mb-2"  height="350px" style="object-fit: cover;"  alt="${this.manufacture}" />
                 <p class="card-title">${this.manufacture}/${this.model}</p>
                 <h5 class="card-sub">${this.formatRupiah(this.rentPerDay)} / hari</h5>
-                <p class="card-text">${this.description}</p>
+                <p class="card-text" style="height: 70px">${this.description}</p>
                  <div class="spec">
                   <section class="mb-3"><img src="./assets/fi_users.png" alt="user" class="me-2" />${this.capacity} Orang</section>
                   <section class="mb-3"><img src="./assets/fi_settings.png" alt="settings" class="me-2" />${this.transmission}</section>
