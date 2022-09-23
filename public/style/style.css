@@ -1,0 +1,285 @@
+body {
+  color: #ffffff;
+  width: 100%;
+  overflow-x: hidden;
+}
+header {
+  background-color: #f1f3ff;
+  padding-left: 20px;
+}
+nav {
+  background-color: #f1f3ff;
+}
+.nav-item {
+  text-align: right;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin-right: 16px;
+  margin-left: 16px;
+  display: inline-block;
+}
+
+#load-btn {
+  border-radius: 2px;
+  color: rgb(255, 255, 255);
+  background-color: #5cb85f;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  height: 35px;
+  width: 110px;
+  margin-top: 25px;
+}
+#clear-btn {
+  border-radius: 2px;
+  text-align: center;
+  text-decoration: none;
+  height: 35px;
+  width: 70px;
+  margin-top: 25px;
+}
+
+#register-btn {
+  border-radius: 2px;
+  color: rgb(255, 255, 255);
+  background-color: #5cb85f;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  width: 90px;
+}
+
+#sewa-btn {
+  border-radius: 2px;
+  color: rgb(255, 255, 255);
+  background-color: #5cb85f;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+}
+.main {
+  background-color: #f1f3ff;
+  padding-top: 100px;
+  padding-left: 1rem;
+}
+#search {
+  padding-left: 180px;
+  padding-right: 180px;
+  min-height: 300px;
+}
+#search-card {
+  padding: 20px;
+  margin: auto;
+  margin-top: -50px;
+}
+#btn-search{
+  margin-right: -125px;
+}
+#car-btn {
+  border-radius: 2px;
+  color: rgb(255, 255, 255);
+  background-color: #5cb85f;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+}
+main {
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.service {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.service-list {
+  font-size: 18px;
+  list-style-type: none;
+}
+.service-list li {
+  margin-top: 15px;
+  margin-left: -2rem;
+}
+#services {
+  padding-top: 1rem;
+}
+#why-us {
+  padding-top: 3rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#why-us .card {
+  margin-top: 20px;
+}
+#why-us .card-body {
+  margin-top: 5px;
+  height: 185px;
+}
+#testimonial {
+  padding-top: 60px;
+  margin-bottom: 50px;
+  margin-left: -200px;
+  margin-right: -200px;
+}
+
+#testimonial .card {
+  margin-top: 1rem;
+  background-color: #f1f3ff;
+  border-style: hidden;
+  border-radius: 8px;
+  max-width: 600px;
+}
+#testi-card .rate {
+  width: 100px;
+  margin-bottom: 10px;
+}
+#testi-btn {
+  margin-top: 2rem;
+  display: inline-flex;
+  text-align: center;
+}
+#testi-btn a {
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 25px;
+  height: 25px;
+  color: #222222;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+#testi-btn a:hover {
+  color: #ffffff;
+  background-color: #5cb85f;
+}
+
+#sewa .card {
+  margin: auto;
+  max-width: 1168px;
+  min-height: 326px;
+  border-style: hidden;
+  border-radius: 13px;
+  color: #ffffff;
+  background-color: #0d28a6;
+  margin-top: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#sewa .sewa-btn {
+  display: flex;
+}
+#faq-title {
+  text-align: start;
+}
+#faq .card {
+  padding: 40px;
+  border-style: hidden;
+}
+
+footer .row {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.icon img {
+  width: 35px;
+  margin-right: 5px;
+}
+#offcanvasExample {
+  width: 50%;
+}
+.offcanvas-body ul li {
+  margin-left: 0px;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .main .title {
+    padding-right: 5px;
+    font-size: 2.5em;
+    line-height: 60px;
+  }
+  nav {
+    margin-left: -20px;
+  }
+  #car-img {
+    margin-top: 20px;
+  }
+  #services {
+    margin-left: -50px;
+  }
+  #services .img-fluid {
+    width: 275px;
+  }
+  .service {
+    font-size: 1em;
+  }
+  .service-list {
+    font-size: 0.9em;
+  }
+  #why-us {
+    margin-top: -30px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #why-us h2 {
+    text-align: center;
+  }
+  #why-us .sub-title {
+    text-align: center;
+  }
+  #faq-title {
+    text-align: center;
+  }
+  #faq .card {
+    width: auto;
+    padding: 0px;
+  }
+  #testimonial {
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #testi-card .card-body {
+    padding: 25px;
+  }
+  #testi-av {
+    width: 80px;
+    margin: 40px;
+  }
+  #testi-av img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .rate {
+    margin: auto;
+  }
+  #sewa .card {
+    margin-left: -12px;
+    margin-right: -12px;
+    padding: 30px;
+  }
+  #sewa .title {
+    font-size: 28px;
+  }
+  #faq .card-body {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+  footer .row {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  footer #navigation p {
+    margin-top: -15px;
+  }
+  #copyright {
+    margin-top: 10px;
+  }
+}
