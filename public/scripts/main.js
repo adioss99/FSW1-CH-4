@@ -23,16 +23,18 @@ load.addEventListener('click', function () {
   const get = new Filter(driver, date, time, seat);
   const menu = driver != 'null' && date != '' && time != 'null';
   // console.log(driver, date, time, seat);
-  if (menu && seat == '' || seat == '0') {
-    console.log('Filter');
-    get.filter().then(get.run);
-  } else if (menu && seat != '' && seat != '0') {
-    console.log('optionalFilter');
-    get.optionalFilter().then(get.run);
-  } else {
-    console.log('all');
-    get.init().then(get.run);
-  }
+  let optional = seat == '' || seat == '0' ? false : true  
+  console.log(optional)
+    if (menu && optional === false) {
+      console.log('Filter');
+      get.filter().then(get.run);
+    } else if (menu && optional === true) {
+      console.log('optionalFilter');
+      get.optionalFilter().then(get.run);
+    } else {
+      console.log('all');
+      get.init().then(get.run);
+    }
 });
 
 clear.addEventListener('click', function () {

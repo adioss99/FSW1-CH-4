@@ -62,9 +62,7 @@ class Filter extends App {
     const cars = await Binar.listCars();
     let newCar = cars.filter((car) => car.available == driver && car.availableAt.slice(0, 10) + car.availableAt.slice(11, 16) <= this.date + this.time);
     this.#newData(newCar);
-    newCar.forEach(element => {
-      console.log(element)
-    });
+    console.log(newCar.length);
   }
 
   async optionalFilter() {
@@ -72,8 +70,8 @@ class Filter extends App {
     let driver = this.driver.toLowerCase() == 'true' ? true : false;
     let cars = await Binar.listCars();
     let newCar = cars.filter((car) => car.available == driver && car.availableAt.slice(0, 10) + car.availableAt.slice(11, 16) <= this.date + this.time && car.capacity == this.seat);
-    console.log('newCar.length', newCar.length);
     this.#newData(newCar);
+    console.log(newCar.length);
   }
 
   clear = () => {
