@@ -12,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div id="dark-bg" onclick="inactiveDarkBackground()"></div>
     <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -27,7 +28,7 @@
       </div>
     </div>
     <header>
-      <nav class="navbar navbar-expand-lg pe-1 px-4 fixed-top">
+      <nav class="navbar navbar-expand-lg pe-1 px-4">
         <div class="container-fluid">
           <a href="/">
             <img src="assets/logo.png" class="ps-1" alt="logo" />
@@ -91,7 +92,7 @@
         <div class="row pe-3">
           <div class="col-xl col-md-6 col-sm-12">
             <label>Tipe Driver</label>
-            <select class="form-select" id="inputDriver" aria-label="Default select example">
+            <select class="form-select" id="inputDriver" onclick="activeDarkBackground()" aria-label="Default select example">
               <option value="null" hidden selected>Pilih Tipe Driver</option>
               <option value="true">Dengan Sopir</option>
               <option value="false">Tanpa Sopir (Lepas Kunci)</option>
@@ -99,11 +100,11 @@
           </div>
           <div class="col-xl col-md-6 col-sm-12">
             <label>Tanggal</label>
-            <input id="startDate" class="form-control" type="date" />
+            <input id="startDate" class="form-control" onclick="activeDarkBackground()" type="date" />
           </div>
           <div class="col-xl col-md-6 col-sm-12">
             <label>Waktu Jemput/Ambil</label>
-            <select class="form-select" id="select-time" aria-label="Default select example">
+            <select class="form-select" id="select-time" onclick="activeDarkBackground()" aria-label="Default select example">
               <option value="null" hidden selected>Pilih Waktu</option>
               <option value="08:00">08.00 WIB</option>
               <option value="09:00">09.00 WIB</option>
@@ -116,13 +117,13 @@
           <div class="col-xl col-md-6 col-sm-12">
             <label>Jumlah Penumpang (optional)</label>
             <div class="input-group flex-nowrap">
-              <input id="seat" type="number" min="0" max="10" step="2" class="form-control border-end-0" placeholder="Jumlah Penumpang" aria-label="Jumlah Penumpang" aria-describedby="addon-wrapping" />
+              <input id="seat" onclick="activeDarkBackground()" type="number" min="0" max="10" step="2" class="form-control border-end-0" placeholder="Jumlah Penumpang" aria-label="Jumlah Penumpang" aria-describedby="addon-wrapping" />
               <span class="input-group-text border-start-0" id="addon-wrapping" style="background-color: #fff"><img src="./assets/fi_users.png" alt="" /></span>
             </div>
           </div>
           <div class="col-xl" id="btn-search">
-            <button id="load-btn" class="btn btn-success">Cari Mobil</button>
-            <button id="clear-btn" class="btn btn-outline-primary">Edit</button>
+            <button id="load-btn" class="btn btn-success" style="background-color: #5cb85f;border: none;">Cari Mobil</button>
+            <!-- <button id="clear-btn" class="btn btn-outline-primary">Edit</button> -->
           </div>
         </div>
       </div>

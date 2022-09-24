@@ -32,9 +32,9 @@ load.addEventListener('click', function () {
     console.log('optionalFilter');
     get.optionalFilter().then(get.run);
   } else if (driver != 'null' || date != '' || time != 'null') {
-        $(document).ready(function () {
-          $('#myModal').modal('show');
-        });
+    $(document).ready(function () {
+      $('#myModal').modal('show');
+    });
     get.init().then(get.run);
   } else {
     console.log('all');

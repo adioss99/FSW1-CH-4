@@ -8,6 +8,7 @@ header {
   padding-left: 20px;
 }
 nav {
+  z-index: 0;
   background-color: #f1f3ff;
 }
 .nav-item {
@@ -20,14 +21,14 @@ nav {
 }
 
 #load-btn {
+  z-index: 3;
   border-radius: 2px;
-  color: rgb(255, 255, 255);
-  background-color: #5cb85f;
+  /* color: rgb(255, 255, 255); */
+  /* background-color: #5cb85f; */
   text-align: center;
-  border: none;
+  /* border: none; */
   text-decoration: none;
   height: 35px;
-  width: 110px;
   margin-top: 25px;
 }
 #clear-btn {
@@ -67,13 +68,27 @@ nav {
   padding-right: 180px;
   min-height: 300px;
 }
+#dark-bg {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  scale: 1.0002;
+}
 #search-card {
+  z-index: 2;
   padding: 20px;
   margin: auto;
   margin-top: -50px;
 }
-#btn-search{
-  margin-right: -128px;
+#btn-search {
+  margin-right: -148px;
 }
 #car-btn {
   border-radius: 2px;
